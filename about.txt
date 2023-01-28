@@ -1,0 +1,87 @@
+==============================================================
+==============================================================
+
+ Welcome!
+
+ It's 2023-01-28 at 10:56 AM
+
+ This file is running on:    nt Windows 10
+
+ The Python version is:      3.11.1
+
+ The Python interpreter is at:
+ C:\Users\KONGA\AppData\Local\Programs\Python\Python311\python.exe
+
+ The active environment should be either conda OR pip (one should be None):
+
+     Active conda env is: None
+     Active pip env is:   None
+
+ The path to the active virtual environment is:
+
+ C:\Users\KONGA\AppData\Local\Programs\Python\Python311
+
+ The Current Working Directory (CWD) where this command was launched is:
+
+ C:\Users\KONGA\Documents
+
+ The absolute path to the data directory is:
+
+ C:\Users\KONGA\Documents\
+
+ The absolute path to this source directory is:
+
+ c:\Users\KONGA\Documents\datafun-03-datatypes
+
+ The absolute path to this file is:
+
+ c:\Users\KONGA\Documents\datafun-03-datatypes\about.py
+
+==============================================================
+==============================================================
+
+
+PS C:\Users\KONGA\Documents> & C:/Users/KONGA/AppData/Local/Programs/Python/Python311/python.exe c:/Users/KONGA/Documents/datafun-03-datatypes/about.py
+
+
+==============================================================
+==============================================================
+
+ Welcome!
+
+ It's 2023-01-28 at 10:57 AM
+
+ This file is running on:    nt Windows 10
+
+ The Python version is:      3.11.1
+
+ The Python interpreter is at:
+ C:\Users\KONGA\AppData\Local\Programs\Python\Python311\python.exe
+
+ The active environment should be either conda OR pip (one should be None):
+
+     Active conda env is: None
+     Active pip env is:   None
+
+ The path to the active virtual environment is:
+
+ C:\Users\KONGA\AppData\Local\Programs\Python\Python311
+
+ The Current Working Directory (CWD) where this command was launched is:
+
+ C:\Users\KONGA\Documents
+
+ The absolute path to the data directory is:
+
+ C:\Users\KONGA\Documents\
+
+ The absolute path to this source directory is:
+
+ c:\Users\KONGA\Documents\datafun-03-datatypes
+
+ The absolute path to this file is:
+
+ c:\Users\KONGA\Documents\datafun-03-datatypes\about.py
+
+==============================================================
+==============================================================
