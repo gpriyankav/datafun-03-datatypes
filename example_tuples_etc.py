@@ -191,7 +191,8 @@ data_dict = {
 # Dictionaries can be used to store and aggregate statistical data,
 # such as counts or sums. For example, a dictionary of word-count pairs.
 
-with open("text_simple.txt") as file_object:
+
+with open("C:\\Users\\KONGA\\Documents\\datafun-03-datatypes\\text_simple.txt") as file_object:
     word_list = file_object.read().split()
 
 word_counts_dict = {}

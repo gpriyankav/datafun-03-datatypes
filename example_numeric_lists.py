@@ -189,7 +189,9 @@ lst.remove(item_to_remove)
 ct_of_111 = score_list.count(111)
 
 # Sort the list in ascending order using the sort() method
-asc_scores2 = score_list.sort()
+score_list.sort()
+
+print(f"ascending order:", score_list)
 
 # Sort the list in descending order using the sort() method
 desc_scores2 = score_list.sort(reverse=True)

@@ -1,5 +1,6 @@
 """
-Modify this docstring.
+Priyanka Gorentla code changes done on 1/28/2023.
+Code on numeric lists
 
 """
 
@@ -8,8 +9,6 @@ Modify this docstring.
 import math
 import statistics
 
-
-list = ['Breathing Excercise','cobra pose','Tree Pose','Triangle Pose','Plant Pose','Pranayama','Yamas','Niyamas','Bridge Pose']
 list1 = [12,15,18,21,24,27,30,33,36,39,41,44,47,49,49,49,50,51,53,55,57,59,61,64,66,69,70,73,75]
 listx = []
 listy = [100.2,121.4,134.5,132.3,143.7,152.8,157.8,163.1,178.5,184.2]
@@ -31,9 +30,13 @@ mean = statistics.mean(list1)
 median = statistics.median(list1)
 mode = statistics.mode(list1)
 
+print()
 print('mean of list1:', mean)
+print()
 print('median of list1:', median)
+print()
 print('mode of list1:', mode)
+print()
 
 # Descriptive: Measures of spread
 # Get standard deviation and variance for a values list
@@ -41,8 +44,10 @@ print('mode of list1:', mode)
 stdev = statistics.stdev(list1)
 variance = statistics.variance(list1)
 
-print('Standard Deviation of list1:', stdev)
-print('Variance of list1:', variance)
+print('Standard Deviation of list1:',{round(stdev,3)})
+print()
+print('Variance of list1:', {round(variance,3)})
+print()
 
 # Descriptive: Measures of correlation
 # Use two numerical lists of the same size
@@ -51,6 +56,7 @@ print('Variance of list1:', variance)
 correlationxy = statistics.correlation(listx,listy)
 
 print('Correlation between listx and listy:', correlationxy)
+print()
 
 # Predictive: Machine Learning - Linear Regression
 # If the corrlation is close to 1.0, then the data is linearly related
@@ -63,6 +69,7 @@ slope, intercept = statistics.linear_regression(listx,listy)
 
 print(f'Slope: {slope:.3f}')
 print(f'Intercept: {intercept:.3f}')
+print()
 
 # Use the slope and intercept to predict a y value for the future x value
 # y = mx + b
@@ -72,6 +79,7 @@ futute_x = 15
 future_y = slope*futute_x + intercept
 
 print(f'the future vale: {future_y:.4f}')
+print()
 
 # BUILT-IN FUNCTIONS ......................................
 # Many built-in functions work on lists
@@ -83,7 +91,7 @@ print(f'the future vale: {future_y:.4f}')
 max = max(listy)
 min = min(listy)
 
-print('list1 values max and min:', max , min)
+print('list1 values max and min:', max ,'\n', min)
 
 # Calculate the length of the list
 len = len(list1)
@@ -154,14 +162,14 @@ ct_of_49 = list1.count(49)
 print('49 value in list1:',ct_of_49,'times')
 
 # Sort the list in ascending order using the sort() method
-asc_scores2 = list1.sort()
+list1.sort()
 
-print('list1 values in ascending order:',asc_scores2)
+print('list1 values in ascending order:',list1)
 
 # Sort the list in descending order using the sort() method
-desc_scores2 = list1.sort(reverse=True)
+list1.sort(reverse=True)
 
-print('list1 values in descending order:',desc_scores2)
+print('list1 values in descending order:',list1)
 
 # Copy the list to a new list
 new_scores = list1.copy()
@@ -189,28 +197,28 @@ print('Values after removing first and last values form list1:',new_scores)
 # You could pass in a named function, but honestly this is easier
 # Say "keep x such that x > 100 is True" given new_scores
 # Cast the result using square brackets to get a list
-scores_over_50 = [filter(lambda x: x > 50, new_scores)]
+scores_over_50 = list(filter(lambda x: x > 50, list1))
 
-print('list1 values over 50:',scores_over_50)
+print(f'list1 values over 50: {scores_over_50}')
 
 # Use the built-in function map() anywhere you need to transfrom
 
 # Map each element to its cube
 # Cast the result using square brackets to get a list
-cube_scores = [map(lambda x: x ** 3, new_scores)]
+cube_scores = list(map(lambda x: x ** 3, new_scores))
 
-print('cube values:',cube_scores)
+print(f'cube values:{cube_scores}')
 
 # Map each element to its cube root
 # Say "map x to the cube root of x" and cast to a list
-cbrt_scores = map(lambda x: math.cbrt(x), new_scores)
+cbrt_scores = list(map(lambda x: math.cbrt(x), new_scores))
 
-print('cube root values:',cbrt_scores)
+print(f'cube root values:{cbrt_scores}')
 
 # volume of a cube 
-vol_list = [map(lambda s: s*s*s, list1)]
+vol_list = list(map(lambda s: s*s*s, list1))
 
-print('voulume of the cube:',vol_list)
+print(f'voulume of the cube: {vol_list}')
 
 
 # TRANFORMATIONS - Using List Comprehensions
@@ -233,10 +241,9 @@ print('triple values:',triple_scores)
 
 # list comprehension to transform your list into another list using a transformation
 
-LIST = [item.upper() for item in list]
-
-print('upper case list:',LIST)
-
+weight_kgs = (x * 0.453592 for x in listy)
+lweight_kgs = list(weight_kgs)
+print(f"converting weights(listy) from lbs to kgs:",lweight_kgs)
 print()
 print("Add print statements to the code to see what happens.")
 print("Explore enough to understand.")
@@ -263,13 +270,6 @@ def get_area_of_lot(length, width):
         return None
 
 
-# define more functions here (see instuctions)
-
-def yoga_techniques(list):
-     for name in list:
-        return list
-print('Some of Yoga Techniques are :', list)
-
 
 # -------------------------------------------------------------
 # Call some functions and execute code!
@@ -284,6 +284,6 @@ if __name__ == "__main__":
     print("your code here")
 
 
-print('area with couple of values from list1:', get_area_of_lot(list[3],list[5]))
+print('area with couple of values from list1:', get_area_of_lot(list1[3],list1[5]))
 
 
