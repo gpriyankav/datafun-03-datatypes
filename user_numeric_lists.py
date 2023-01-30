@@ -243,7 +243,7 @@ print('triple values:',triple_scores)
 
 weight_kgs = (x * 0.453592 for x in listy)
 lweight_kgs = list(weight_kgs)
-print(f"converting weights(listy) from lbs to kgs:",lweight_kgs)
+print(f"converting weights of yoga students (listy) from lbs to kgs:",lweight_kgs)
 print()
 print("Add print statements to the code to see what happens.")
 print("Explore enough to understand.")

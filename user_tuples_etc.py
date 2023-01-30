@@ -2,11 +2,6 @@
 Priyanka Gorentla code changes done on 1/28/2023.
 I have added Tuples,sets and Dictionaries related to my domain Yoga
 
-"""
-
-
-
-"""
 TUPLES
 """
 

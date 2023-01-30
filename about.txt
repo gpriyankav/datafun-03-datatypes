@@ -14,7 +14,7 @@
 
  The active environment should be either conda OR pip (one should be None):
 
-     Active conda env is: None
+     Active conda env is: base
      Active pip env is:   None
 
  The path to the active virtual environment is:

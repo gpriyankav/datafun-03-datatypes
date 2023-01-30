@@ -31,12 +31,11 @@ with open("C:\\Users\\KONGA\\Documents\\datafun-03-datatypes\\text_juliuscaesar.
 # hint: use sorted() to sort the list
 # hint: use set() to remove duplicates
 # name them wordset1 and wordset2
-wordset1 = set(wordlist1)  # TODO fix this line
-wordset2 = set(wordlist2)  # TODO fix this line
-
+wordset1 = set(sorted(wordlist1))  
+wordset2 = set(sorted(wordlist2))  
 
 # initialize a variable maxlen = 10
-maxlen = 10  # TODO fix this line
+maxlen = 10  
 
 # use a list comprension to get a list of words longer than 10
 # for word in wordset1
@@ -48,8 +47,8 @@ maxlen = 10  # TODO fix this line
 # hint: use set()
 # name them longwordset1 and longwordset2
 
-longwordset1 = set([word for word in wordset1 if len(word) >10])  # TODO: fix this line
-longwordset2 = set([word for word in wordset2 if len(word) >10])  # TODO: fix this line
+longwordset1 = set([word for word in wordset1 if len(word) > maxlen]) 
+longwordset2 = set([word for word in wordset2 if len(word) > maxlen])  
 
 # find the intersection of the two sets
 # that is, the words in both longwordset1 1 & longwordset2
@@ -57,9 +56,9 @@ longwordset2 = set([word for word in wordset2 if len(word) >10])  # TODO: fix th
 longwords = longwordset1 & longwordset2
 
 # print the length of the sets and the list
-print(len(longwordset1))
-print(len(longwordset2))
-print(len(longwords))
+print('Lenght of ext_hamlet text file :', len(longwordset1))
+print('Lenght of text_juliuscaesar text file:', len(longwordset2))
+print('Length of longwords :',len(longwords))
 print()
 print(f"{sorted(longwords) = }")
 print()
